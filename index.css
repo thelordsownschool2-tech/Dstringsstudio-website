@@ -1,0 +1,321 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#0b0b0b;
+color:#fff;
+}
+
+/* NAVBAR */
+nav{
+position:sticky;
+top:0;
+background:#111;
+padding:15px;
+display:flex;
+justify-content:center;
+gap:20px;
+border-bottom:1px solid #00ff99;
+z-index:1000;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00ff99;
+}
+
+/* HEADER */
+header{
+text-align:center;
+padding:60px 20px;
+background:linear-gradient(135deg,#0f0f0f,#111);
+}
+
+header h1{
+font-size:40px;
+color:#00ff99;
+}
+
+header p{
+color:#ccc;
+margin-top:10px;
+}
+
+.logo{
+width:160px;
+height:160px;
+border-radius:50%;
+margin-bottom:15px;
+object-fit:cover;
+}
+
+/* HERO */
+.hero{
+padding:80px 20px;
+text-align:center;
+}
+
+.hero h2{
+font-size:36px;
+color:#00ff99;
+margin-bottom:10px;
+}
+
+.hero p{
+max-width:600px;
+margin:auto;
+color:#bbb;
+}
+
+/* BUTTON */
+.button{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00ff99;
+color:#000;
+font-weight:bold;
+border-radius:8px;
+text-decoration:none;
+transition:0.3s;
+}
+
+.button:hover{
+transform:scale(1.05);
+}
+
+/* SECTIONS */
+.section{
+padding:60px 20px;
+max-width:1200px;
+margin:auto;
+}
+
+.section h3{
+color:#00ff99;
+margin-bottom:20px;
+font-size:26px;
+}
+
+/* ABOUT */
+.about-box{
+background:#151515;
+padding:20px;
+border-radius:10px;
+border:1px solid #222;
+color:#ccc;
+line-height:1.6;
+}
+
+/* GALLERY */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+align-items:stretch;
+}
+
+.card{
+background:#151515;
+padding:15px;
+border-radius:15px;
+border:1px solid #222;
+transition:0.3s;
+overflow:hidden;
+height:100%;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+.card:hover{
+transform:translateY(-5px);
+border-color:#00ff99;
+box-shadow:0 0 15px rgba(0,255,153,0.3);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:10px;
+margin-bottom:12px;
+display:block;
+}
+
+.card h4{
+font-size:22px;
+margin-bottom:10px;
+color:#fff;
+}
+
+.card p{
+color:#bbb;
+font-size:15px;
+line-height:1.5;
+}
+
+/* CONTACT */
+.contact{
+background:#151515;
+padding:20px;
+border-radius:10px;
+border:1px solid #222;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:10px;
+margin-bottom:10px;
+border:none;
+border-radius:5px;
+background:#222;
+color:#fff;
+outline:none;
+}
+
+input:focus,
+textarea:focus{
+border:1px solid #00ff99;
+}
+
+button{
+background:#00ff99;
+border:none;
+padding:12px 20px;
+font-weight:bold;
+cursor:pointer;
+border-radius:5px;
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* SOCIAL MEDIA ICONS */
+.socials{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:35px;
+    margin:60px 0;
+    flex-wrap:wrap;
+}
+
+.socials a{
+    width: 60px;
+    height:60px;
+    background:rgba(255,255,255,0.05);
+    border:2px solid #00ff88;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    color:#00ff88;
+    font-size:40px;
+    transition:all 0.4s ease;
+    backdrop-filter:blur(10px);
+    position:relative;
+    overflow:hidden;
+    box-shadow:0 0 15px rgba(0,255,136,0.3);
+}
+
+/* GLOW EFFECT */
+.socials a::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:#00ff88;
+    top:100%;
+    left:0;
+    transition:0.4s;
+    z-index:-1;
+}
+
+.socials a:hover::before{
+    top:0;
+}
+
+.socials a:hover{
+    color:#000;
+    transform:translateY(-10px) scale(1.1);
+    box-shadow:
+        0 0 20px #00ff88,
+        0 0 40px #00ff88;
+}
+
+
+/* WHATSAPP FLOAT */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:#fff;
+padding:12px 18px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 0 10px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.whatsapp:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+footer{
+text-align:center;
+padding:20px;
+background:#111;
+color:#666;
+margin-top:40px;
+border-top:1px solid #222;
+}
+
+/* ICON STYLE */
+i{
+margin-right:6px;
+color:#00ff99;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+nav{
+flex-wrap:wrap;
+gap:15px;
+}
+
+header h1{
+font-size:30px;
+}
+
+.hero h2{
+font-size:28px;
+}
+
+.section{
+padding:40px 15px;
+}
+
+.card img{
+height:200px;
+}
+
+
+}
